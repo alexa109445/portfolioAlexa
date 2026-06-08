@@ -1,0 +1,20 @@
+.dashboard-section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.dash-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dash-img {
+    width: 100%;
+    height: auto;   
+    display: block;    
+    margin: 0;
+}
+
