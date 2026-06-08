@@ -1,20 +1,89 @@
-.dashboard-section {
+ .dash-container {
     margin: 0;
     padding: 0;
     width: 100%;
 }
-
-.dash-container {
-    position: relative;
-    width: 100%;
+.dashboard-section{
     margin: 0;
     padding: 0;
+    width: 100%;
+    background-color: #e2d4f0;
 }
-
 .dash-img {
     width: 100%;
-    height: auto;   
+    height: 100vh; 
+    object-fit: cover;
     display: block;    
     margin: 0;
 }
+.card-base {
+    position: absolute;
+    background-color: #c9b2e3;
+    width: 42%;        
+    max-width: 450px;  
+    height: 18%;       
+    font-size: 2.3vw; 
+    font-family: 'Noto Serif', serif;
+    cursor: pointer; 
+    
+    transition: transform 0.2s ease-in-out;
+}
 
+.card-base:hover {
+    transform: scale(1.05); 
+}
+
+.primaDashCard {
+    top: 15%;
+    left: 35%;
+}
+
+.secondaDashCard {
+    top: 41%;
+    left: 23%; 
+}
+
+.terzaDashCard {
+    top: 67%;
+    left: 35%;
+}
+
+
+
+@media (max-width: 768px) {
+    .card-base {
+        width: 65%;   
+        height: 16%;
+    }
+    
+    .primaDashCard, .terzaDashCard {
+        left: 20%;
+    }
+    
+    .secondaDashCard {
+        left: 2%;
+    }
+
+    .card-base {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-base {
+        width: 80%;   
+        height: 14%;
+    }
+    
+    .primaDashCard, .terzaDashCard {
+        left: 18%;
+    }
+    
+    .secondaDashCard {
+        left: -2%; 
+    }
+
+    .card-base {
+        font-size: 1rem;
+    }
+}
