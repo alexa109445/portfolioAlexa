@@ -1,0 +1,59 @@
+.sectionProgetti {
+    position: relative;
+    background-image: url("../assets/progetti.svg");      
+    background-size: cover; 
+    background-position: center;
+    min-height: 100vh;                    
+}
+
+.titolo {
+    font-size: 50px;
+    font-family: 'Noto Serif';
+    position: absolute;
+    top: 15%;
+    right: 42%;
+}
+
+.card-base {
+    position: absolute; 
+    background-color: #fcd4e4; 
+    color: #b0306a ; 
+    width: 42%;        
+    max-width: 450px;  
+    padding: 25px 15px;     
+    font-size: 2.3vw; 
+    font-family: 'Noto Serif', serif;
+    cursor: pointer; 
+    border-radius: 25px; 
+    box-shadow: 8px 8px 0px #b0306a; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-base:hover {
+    transform: translate(-2px, -2px) scale(1.03); 
+    box-shadow: 10px 10px 0px #b0306a; 
+}
+
+
+.primacard { 
+    top: 30%; 
+    left: 35%; 
+}
+
+.secondacard { 
+    top: 50%; 
+    left: 20%; 
+}
+
+.terzacard { 
+    top: 70%; 
+    left: 35%; 
+}
+
+.quartacard{
+    top: 50%; 
+    right: 20%;
+}

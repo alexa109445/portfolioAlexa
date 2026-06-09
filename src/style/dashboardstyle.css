@@ -1,14 +1,16 @@
- .dash-container {
+.dash-container {
     margin: 0;
     padding: 0;
     width: 100%;
 }
-.dashboard-section{
+
+.dashboard-section {
     margin: 0;
     padding: 0;
     width: 100%;
     background-color: #e2d4f0;
 }
+
 .dash-img {
     width: 100%;
     height: 100vh; 
@@ -16,56 +18,55 @@
     display: block;    
     margin: 0;
 }
+
 .card-base {
     position: absolute;
-    background-color: #c9b2e3;
+    background-color: #fcd4e4; 
+    color: #b0306a ; 
     width: 42%;        
     max-width: 450px;  
     height: 18%;       
     font-size: 2.3vw; 
     font-family: 'Noto Serif', serif;
     cursor: pointer; 
-    
-    transition: transform 0.2s ease-in-out;
+    border-radius: 25px ; 
+    box-shadow: 8px 8px 0px #b0306a; 
 }
 
 .card-base:hover {
-    transform: scale(1.05); 
+    transform: translate(-2px, -2px) scale(1.03); 
+    box-shadow: 10px 10px 0px #b0306a; 
 }
 
-.primaDashCard {
-    top: 15%;
-    left: 35%;
+.primaDashCard { 
+    top: 15%; 
+    left: 35%; 
 }
 
-.secondaDashCard {
-    top: 41%;
+.secondaDashCard { 
+    top: 41%; 
     left: 23%; 
 }
 
-.terzaDashCard {
-    top: 67%;
-    left: 35%;
+.terzaDashCard { 
+    top: 67%; 
+    left: 35%; 
 }
-
-
 
 @media (max-width: 768px) {
     .card-base {
         width: 65%;   
         height: 16%;
-    }
-    
-    .primaDashCard, .terzaDashCard {
-        left: 20%;
-    }
-    
-    .secondaDashCard {
-        left: 2%;
-    }
-
-    .card-base {
         font-size: 1.2rem;
+        box-shadow: 6px 6px 0px #b0306a; 
+    }
+    
+    .primaDashCard, .terzaDashCard { 
+        left: 20%; 
+    }
+    
+    .secondaDashCard { 
+        left: 2%; 
     }
 }
 
@@ -73,17 +74,15 @@
     .card-base {
         width: 80%;   
         height: 14%;
-    }
-    
-    .primaDashCard, .terzaDashCard {
-        left: 18%;
-    }
-    
-    .secondaDashCard {
-        left: -2%; 
-    }
-
-    .card-base {
         font-size: 1rem;
+        box-shadow: 5px 5px 0px #b0306a;
+    }
+    
+    .primaDashCard, .terzaDashCard { 
+        left: 18%; 
+    }
+    
+    .secondaDashCard { 
+        left: -2%; 
     }
 }
