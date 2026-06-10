@@ -37,6 +37,7 @@
     width: 100%;
     height: 100vh;
     z-index: 2;
+    
 }
 
 .card-base {
@@ -58,8 +59,10 @@
 }
 
 .dash-card {
+
     position: absolute;
-    width: 450px; 
+    width: 600px; 
+    height: 180px;
     padding: 25px 20px; 
     font-size: 1.8rem; 
 }

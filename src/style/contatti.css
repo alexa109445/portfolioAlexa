@@ -1,0 +1,62 @@
+
+.sectionContatti {
+    position: relative;
+    background-image: url("../assets/contatti.svg"); 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    padding: 60px 20px;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 10;
+    color: rgb(146, 0, 112); 
+    transition: transform 0.2s ease;
+}
+
+.back-arrow:hover {
+    transform: scale(1.1);
+}
+
+.icona {
+    font-size: 2.5rem; 
+    color: #1a237e;   
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cerchio-telefono {
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: inherit; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionContatti a, 
+.sectionContatti span {
+    font-family: 'Noto Serif', serif; 
+    font-weight: 500;
+}
+
+.sectionContatti a:hover {
+    opacity: 0.75;
+}
+
+@media (max-width: 576px) {
+    .sectionContatti .d-flex.flex-column {
+        gap: 2rem ; 
+    }
+    .icona {
+        font-size: 2rem;
+    }
+}

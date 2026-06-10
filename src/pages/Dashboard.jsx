@@ -19,9 +19,11 @@ function Dashboard() {
                         Chi sono 👩🏻‍💻
                     </Link>
 
-                    <a href="#contatti" className="card-base dash-card btn-contatti border-0 text-decoration-none fw-medium text-center px-2">
-                        Contatti 🌸
-                    </a>
+              <Link to="/contatti" className="card-base dash-card btn-contatti border-0 text-decoration-none fw-medium text-center px-2">
+                         Contatti 🌸
+                    </Link>
+                       
+                
                 </div>
 
             </div>

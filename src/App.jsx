@@ -3,6 +3,7 @@ import Dashboard from './pages/Dashboard.jsx';
 import Home from './components/Home.jsx';
 import Progetti from './pages/Progetti.jsx';
 import ChiSono from './pages/ChiSono.jsx';
+import Contatti from './pages/Contatti.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         
         <Route path="/progetti" element={<Progetti />} />
         <Route path="/chisono" element={<ChiSono/>}/>
+        <Route path="/contatti" element={<Contatti/>}/>
       </Routes>
     </Router>
   );
