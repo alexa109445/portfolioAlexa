@@ -1,14 +1,21 @@
-.dash-container {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
 .dashboard-section {
     margin: 0;
     padding: 0;
     width: 100%;
     background-color: #e2d4f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.dash-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dash-img {
@@ -17,20 +24,32 @@
     object-fit: cover;
     display: block;    
     margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.dash-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
 }
 
 .card-base {
-    position: absolute;
     background-color: #fcd4e4; 
     color: #b0306a ; 
-    width: 42%;        
-    max-width: 450px;  
-    height: 18%;       
-    font-size: 2.3vw; 
     font-family: 'Noto Serif', serif;
     cursor: pointer; 
-    border-radius: 25px ; 
+    border-radius: 25px; 
     box-shadow: 8px 8px 0px #b0306a; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card-base:hover {
@@ -38,51 +57,56 @@
     box-shadow: 10px 10px 0px #b0306a; 
 }
 
-.primaDashCard { 
-    top: 15%; 
-    left: 35%; 
+.dash-card {
+    position: absolute;
+    width: 450px; 
+    padding: 25px 20px; 
+    font-size: 1.8rem; 
 }
 
-.secondaDashCard { 
-    top: 41%; 
-    left: 23%; 
+.btn-progetti {
+    top: 13%;
+    left: 36%;
 }
 
-.terzaDashCard { 
-    top: 67%; 
-    left: 35%; 
+.btn-chisono {
+    top: 43%;
+    right: 43%;
+}
+
+.btn-contatti {
+    top: 74%;
+    left: 36%;
 }
 
 @media (max-width: 768px) {
-    .card-base {
-        width: 65%;   
-        height: 16%;
-        font-size: 1.2rem;
+    .dash-content {
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .dash-card {
+        position: relative; 
+        top: auto;
+        left: auto;
+        width: 85%;   
+        max-width: 450px;
+        font-size: 1.4rem;
         box-shadow: 6px 6px 0px #b0306a; 
-    }
-    
-    .primaDashCard, .terzaDashCard { 
-        left: 20%; 
-    }
-    
-    .secondaDashCard { 
-        left: 2%; 
+        padding: 20px 15px;
     }
 }
 
 @media (max-width: 480px) {
-    .card-base {
-        width: 80%;   
-        height: 14%;
-        font-size: 1rem;
+    .dash-card {
+        width: 90%;
+        font-size: 1.2rem;
         box-shadow: 5px 5px 0px #b0306a;
-    }
-    
-    .primaDashCard, .terzaDashCard { 
-        left: 18%; 
-    }
-    
-    .secondaDashCard { 
-        left: -2%; 
     }
 }

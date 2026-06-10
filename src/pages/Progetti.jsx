@@ -1,22 +1,35 @@
+import React from "react";
 import '../style/progettistyle.css';
+import { Link } from "react-router-dom";
+import { ArrowLeftShort } from "react-bootstrap-icons";
 
 function Progetti() {
     return (
         <section className="sectionProgetti">
-            <h1 className='titolo text-white'>I miei progetti</h1>
-            <div className='card-base primacard'>
-                CentUp
+            <Link to="/" className="back-arrow" title="Torna alla Dashboard">
+                <ArrowLeftShort size={32} />
+            </Link>
+            
+            <h1 className='titolo'>I miei progetti</h1>
+   
+            <div className='card-base progetti-card primacard'>
+                <h2 className="card-title">CentUp</h2>
+                <p className="card-text">Applicazione di risparmio personale</p>
             </div>
 
-            <div className='card-base secondacard'>
-                seconda
-            </div>
-            <div className='card-base terzacard'>
-                terza
+            <div className='card-base progetti-card secondacard'>
+                <h2 className="card-title">Netflix-Clone</h2>
+                <p className="card-text">Clone dell'interfaccia visiva di Netflix</p>
             </div>
 
-            <div className='card-base quartacard'>
-               quarta
+            <div className='card-base progetti-card terzacard'>
+                <h2 className="card-title">Applicazione Meteo</h2>
+                <p className="card-text">Sviluppo di un'applicazione meteo</p>
+            </div>
+
+            <div className='card-base progetti-card quartacard'>
+                <h2 className="card-title">Gestione Eventi</h2>
+                <p className="card-text">Applicazione per la gestione degli eventi</p>
             </div>
         </section>
     );
