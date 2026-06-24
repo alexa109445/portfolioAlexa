@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeftShort } from "react-bootstrap-icons";
 import "../style/centup.css";
-import fotoMockup from "../assets/HomeCentUp.jpeg";
 import imgSpesa from "../assets/spesa.jpeg";
 import imgFreccia from "../assets/freccia.jpeg";
 import imgSalvadanaio from "../assets/salvadanaio.jpeg"; 
@@ -12,6 +11,7 @@ import imgAccedi from "../assets/Accedi.jpeg";
 import imgBootstrap from "../assets/bootstrap.jpeg";
 import imgJavaTech from "../assets/java.jpeg";
 import imgPostare from "../assets/postgre.jpeg";
+import simulazioneGif from "../assets/simulazione.gif";
 
 function CentUp() {
     return (
@@ -29,13 +29,13 @@ function CentUp() {
                     CentUp serve a unire il risparmio personale e la beneficenza in un unico posto, rendendo facile mettere da parte i soldi e donarli con un click. ✨
                 </p>
                 
-                <div className="centup-mockup-box mb-5 pb-5">
-                    <img 
-                        src={fotoMockup} 
-                        alt="Interfaccia Dashboard CentUp" 
-                        className="centup-img" 
-                    />
-                </div>
+              <div className="centup-mockup-box mb-5 pb-5">
+            <img 
+                src={simulazioneGif} 
+                alt="Simulazione animata Dashboard CentUp" 
+                className="centup-img" 
+            />
+        </div>
                 <div className="centup-funzionamento mb-5 pb-5 border-bottom-divisore">
                     <h2 className="centup-titolo mb-5">Come funziona? 🧩</h2>
                     
