@@ -37,7 +37,6 @@
     width: 100%;
     height: 100vh;
     z-index: 2;
-    
 }
 
 .card-base {
@@ -59,7 +58,6 @@
 }
 
 .dash-card {
-
     position: absolute;
     width: 600px; 
     height: 180px;
@@ -74,7 +72,7 @@
 
 .btn-chisono {
     top: 43%;
-    right: 43%;
+    left: 26%;
 }
 
 .btn-contatti {
@@ -82,33 +80,39 @@
     left: 36%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1399.98px) {
     .dash-content {
         position: relative;
         height: auto;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 20px;
-        padding: 40px 20px;
+        gap: 30px;
+        padding: 60px 20px;
     }
 
     .dash-card {
         position: relative; 
         top: auto;
         left: auto;
-        width: 85%;   
-        max-width: 450px;
-        font-size: 1.4rem;
-        box-shadow: 6px 6px 0px #b0306a; 
-        padding: 20px 15px;
+        right: auto;
+        width: 100%;
+        max-width: 500px;
+        height: 140px;
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
+    .dash-content {
+        gap: 20px;
+        padding: 40px 15px;
+    }
+
     .dash-card {
-        width: 90%;
+        height: 110px;
         font-size: 1.2rem;
         box-shadow: 5px 5px 0px #b0306a;
     }

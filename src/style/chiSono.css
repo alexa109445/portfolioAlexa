@@ -7,7 +7,8 @@
     font-family: 'Noto Serif', serif;
     display: flex;
     align-items: center;
-    padding: 60px 0;
+    justify-content: center;
+    padding: 80px 0;
 }
 
 .back-arrow {
@@ -22,44 +23,55 @@
     font-size: 3.5rem;
     font-weight: 700;
     color: rgb(146, 0, 112);
+    text-align: center;
 }
 
 .cs-titolo-destro {
     font-size: 3.5rem;
     font-weight: 700;
     color: #563d7c;
+    text-align: center;
 }
 
 .cs-sottotitolo-master {
     font-size: 1.6rem;
     font-weight: 700;
     color: #212529;
+    text-align: center;
 }
 
 .cs-testo-epicode {
     color: #6f42c1;
     font-size: 1.2rem;
+    text-align: center;
+}
+
+.cs-foto-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .cs-foto {
     width: 100%;
-    max-width: 480px;
+    max-width: 440px;
     height: auto;
     object-fit: cover;
     border-radius: 4px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 }
 
 .cs-testo {
     font-size: 1.3rem;
     line-height: 1.6;
     color: #2b2b2b;
-    text-align: left;
+    text-align: center;
     width: 100%;
 }
 
 .cs-spaziatore-valore {
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
 @media (max-width: 991.98px) {
@@ -68,10 +80,6 @@
     }
     .cs-titolo-sinistro, .cs-titolo-destro {
         font-size: 2.4rem;
-    }
-    .cs-foto-box {
-        text-align: center;
-        margin-bottom: 20px;
     }
     .cs-spaziatore-valore {
         margin-top: 2rem;

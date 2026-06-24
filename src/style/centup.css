@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    overflow-y: auto ;
+    height: auto;
+}
+
+.sectionCentUp {
+    position: relative;
+    background-color: #EFDEF3; 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Noto Serif', serif;
+    display: block; 
+    padding: 100px 20px 80px 20px;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 10;
+    color: rgb(146, 0, 112);
+    transition: transform 0.2s ease;
+}
+
+.back-arrow:hover {
+    transform: scale(1.1);
+}
+
+.centup-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.centup-titolo {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #8c619d;
+}
+
+.centup-descrizione {
+    font-size: 1.35rem;
+    color: #9c82a6;
+    line-height: 1.5;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.centup-mockup-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.centup-img {
+    width: 100%;
+    max-width: 1050px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    object-fit: contain;
+}
+
+.border-bottom-divisore {
+    border-bottom: 2px solid rgba(140, 97, 157, 0.15);
+}
+
+.grid-funzionamento {
+    gap: 1.5rem;
+}
+
+.funzionamento-testo {
+    font-size: 1.25rem;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.img-spesa {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    object-fit: contain;
+}
+
+.img-freccia {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    object-fit: contain;
+}
+
+.calcolo-testo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.img-salvadanaio {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+.brand-titolo {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.img-gestione-obiettivi {
+    width: 100%;
+    max-width: 490px; 
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.img-donazioni {
+    width: 100%;
+    max-width: 490px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.img-accedi {
+    width: 100%;
+    max-width: 360px; 
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.obiettivi-tech-box {
+    background-color: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.tech-box-testo {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: #2b2b2b;
+}
+
+.tech-categoria-titolo {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #8c619d;
+}
+
+.tech-lista-titolo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgb(146, 0, 112);
+    line-height: 1.4;
+}
+
+.tech-descrizione-testo {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.img-tech-logos {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .tech-border-l {
+        border-left: 2px solid rgba(140, 97, 157, 0.15);
+    }
+}
+
+@media (max-width: 992px) {
+    .funzionamento-testo {
+        text-align: center;
+    }
+    .img-freccia {
+        transform: rotate(90deg);
+        margin: 30px 0;
+        max-width: 80px;
+    }
+    .centup-titolo {
+        font-size: 2.2rem;
+    }
+    .img-gestione-obiettivi,
+    .img-donazioni,
+    .img-accedi {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .tech-col {
+        text-align: center;
+    }
+}

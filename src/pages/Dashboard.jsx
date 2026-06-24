@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import homeImage from '../assets/Home.svg';
-import '../style/dashboardstyle.css';
+import '../style/dashboard.css';
 
 function Dashboard() {
     return (
@@ -19,11 +19,9 @@ function Dashboard() {
                         Chi sono 👩🏻‍💻
                     </Link>
 
-              <Link to="/contatti" className="card-base dash-card btn-contatti border-0 text-decoration-none fw-medium text-center px-2">
+                    <Link to="/contatti" className="card-base dash-card btn-contatti border-0 text-decoration-none fw-medium text-center px-2">
                          Contatti 🌸
                     </Link>
-                       
-                
                 </div>
 
             </div>
