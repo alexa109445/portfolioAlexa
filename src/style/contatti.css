@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 .sectionContatti {
     position: relative;
@@ -6,23 +7,105 @@
     background-position: center;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center; 
     align-items: center;     
-    padding: 60px 20px;
+    padding: 100px 20px 60px 20px;
+    font-family: 'Noto Serif', serif;
 }
 
 .back-arrow {
-    position: absolute;
+    position: fixed;
     top: 25px;
     left: 25px;
-    z-index: 10;
+    z-index: 1000;
     color: rgb(146, 0, 112); 
     transition: transform 0.2s ease;
 }
 
 .back-arrow:hover {
     transform: scale(1.1);
+}
+
+.contatti-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1140px;
+    gap: 50px;
+}
+
+.contatti-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    flex: 1;
+}
+
+.contatti-form-box {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.form-titolo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.form-sottotitolo {
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.mail-form label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.custom-input {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid rgba(76, 42, 109, 0.2) !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    font-family: 'Noto Serif', serif;
+    font-size: 1rem;
+    color: #212529;
+}
+
+.custom-input:focus {
+    background-color: #ffffff !important;
+    border-color: rgb(146, 0, 112) !important;
+    box-shadow: 0 0 0 0.2rem rgba(146, 0, 112, 0.15) !important;
+}
+
+.btn-invia-form {
+    width: 100%;
+    background-color: rgb(146, 0, 112);
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(146, 0, 112, 0.2);
+}
+
+.btn-invia-form:hover {
+    background-color: #4c2a6d;
+    transform: translateY(-2px);
 }
 
 .icona {
@@ -44,7 +127,6 @@
 
 .sectionContatti a, 
 .sectionContatti span {
-    font-family: 'Noto Serif', serif; 
     font-weight: 500;
 }
 
@@ -52,11 +134,36 @@
     opacity: 0.75;
 }
 
+/* Gestione Responsive per Tablet e Smartphone */
+@media (max-width: 991.98px) {
+    .contatti-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+    
+    .contatti-info-box {
+        width: 100%;
+        max-width: 550px;
+    }
+    
+    .contatti-form-box {
+        width: 100%;
+        max-width: 550px;
+    }
+}
+
 @media (max-width: 576px) {
-    .sectionContatti .d-flex.flex-column {
-        gap: 2rem ; 
+    .contatti-info-box {
+        gap: 2rem; 
     }
     .icona {
         font-size: 2rem;
+    }
+    .contatti-form-box {
+        padding: 25px 20px;
+    }
+    .form-titolo {
+        font-size: 1.5rem;
     }
 }
