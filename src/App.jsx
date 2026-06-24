@@ -5,6 +5,7 @@ import Progetti from './pages/Progetti.jsx';
 import ChiSono from './pages/ChiSono.jsx';
 import Contatti from './pages/Contatti.jsx';
 import CentUp from './pages/CentUp.jsx'; 
+import Meteo from './pages/Meteo.jsx';
 
 function App() {
   return (
@@ -19,8 +20,10 @@ function App() {
         
         <Route path="/progetti" element={<Progetti />} />
         <Route path="/centup" element={<CentUp />} /> 
+        <Route path="/appMeteo" element={<Meteo/>} />
         <Route path="/chisono" element={<ChiSono/>}/>
         <Route path="/contatti" element={<Contatti/>}/>
+
       </Routes>
     </Router>
   );

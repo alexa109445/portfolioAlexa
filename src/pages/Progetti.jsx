@@ -27,10 +27,10 @@ function Progetti() {
                 <p className="card-text">Applicazione per la gestione degli eventi</p>
             </div>
 
-            <div className='card-base progetti-card terzacard'>
+            <Link to="/appMeteo" className='card-base progetti-card terzacard'>
                 <h2 className="card-title">Applicazione Meteo</h2>
                 <p className="card-text">Sviluppo di un'applicazione meteo</p>
-            </div>
+            </Link>
         </section>
     );
 }
