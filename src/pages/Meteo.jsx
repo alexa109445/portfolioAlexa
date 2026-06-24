@@ -15,11 +15,11 @@ function Meteo() {
       <div className="slide-content-wrapper">
         
         <div className="slide-top-section">
-          <img 
-            src="/src/assets/meteo.gif" 
-            alt="Anteprima App Meteo" 
-            className="app-gif-preview" 
-          />
+         <img 
+  src={meteoGif} 
+  alt="Anteprima App Meteo" 
+  className="app-gif-preview" 
+/>
         </div>
 
         <div className="github-link-section">
