@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-.portfolio-slide-container {
+.portfolio-eventi-container {
   position: relative;
   min-height: 100vh;
-  background-color: #e8dbf3;
+  background-color: #EFDEF3;
   padding: 100px 20px 40px 20px;
   display: flex;
   justify-content: center;
   font-family: 'Noto Serif', serif;
 }
 
-.back-arrow-btn {
-  position: absolute;
+.back-arrow-fixed {
+  position: fixed;
   top: 25px;
   left: 25px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: #4c2a6d;
+  background-color: rgba(76, 42, 109, 0.15);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -23,16 +23,16 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  transition: background-color 0.2s ease;
-  z-index: 10;
+  transition: all 0.2s ease;
+  z-index: 1000;
 }
 
-.back-arrow-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.back-arrow-fixed:hover {
+  background-color: #4c2a6d;
   color: white;
 }
 
-.slide-content-wrapper {
+.eventi-content-wrapper {
   max-width: 1100px;
   width: 100%;
   display: flex;
@@ -40,13 +40,13 @@
   gap: 50px;
 }
 
-.slide-top-section {
+.eventi-top-section {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.app-gif-preview {
+.eventi-gif-preview {
   width: 100%;
   max-width: 1100px;
   height: auto;
@@ -55,22 +55,22 @@
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
-.slide-bottom-section {
+.eventi-bottom-section {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-.slide-header-title h2 {
-  color: #4c2a6d;
+.eventi-header-title h2 {
+  color: #212529;
   font-size: 2.6rem;
   font-weight: bold;
   margin: 0;
   font-family: 'Noto Serif', serif;
 }
 
-.slide-description-text p {
+.eventi-description-text p {
   color: #333333;
   font-size: 1.2rem;
   line-height: 1.8;
@@ -78,7 +78,7 @@
   font-family: 'Noto Serif', serif;
 }
 
-.technical-details-box {
+.eventi-technical-box {
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -87,7 +87,7 @@
   border-radius: 16px;
 }
 
-.tech-section h3 {
+.eventi-tech-section h3 {
   color: #4c2a6d;
   font-size: 1.4rem;
   font-weight: bold;
@@ -95,15 +95,15 @@
   font-family: 'Noto Serif', serif;
 }
 
-.tech-section p {
-  color: #4a4a4a;
+.eventi-tech-section p {
+  color: #212529;
   font-size: 1.05rem;
   line-height: 1.6;
   margin-bottom: 15px;
   font-family: 'Noto Serif', serif;
 }
 
-.code-snippet-box {
+.eventi-code-box {
   background-color: #282c34;
   color: #abb2bf;
   padding: 20px;

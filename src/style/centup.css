@@ -1,202 +1,180 @@
-
-html, body {
-    overflow-y: auto ;
-    height: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 .sectionCentUp {
-    position: relative;
-    background-color: #EFDEF3; 
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    font-family: 'Noto Serif', serif;
-    display: block; 
-    padding: 100px 20px 80px 20px;
-}
-
-.back-arrow {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    z-index: 10;
-    color: rgb(146, 0, 112);
-    transition: transform 0.2s ease;
-}
-
-.back-arrow:hover {
-    transform: scale(1.1);
+  background-color: #EFDEF3;
+  padding: 60px 0;
+  position: relative;
+  min-height: 100vh;
+  font-family: 'Noto Serif', serif !important;
 }
 
 .centup-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #4c2a6d;
+  background-color: rgba(76, 42, 109, 0.15);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.back-arrow:hover {
+  background-color: #4c2a6d;
+  color: #ffffff;
 }
 
 .centup-titolo {
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #8c619d;
+  font-family: 'Noto Serif', serif;
+  color: #212529;
+  font-weight: 700;
+}
+
+h1.centup-titolo {
+  font-size: 2.5rem;
+}
+
+h2.centup-titolo {
+  font-size: 2rem;
 }
 
 .centup-descrizione {
-    font-size: 1.35rem;
-    color: #9c82a6;
-    line-height: 1.5;
-    max-width: 950px;
-    margin: 0 auto;
+  font-size: 1.2rem;
+  color: #333333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .centup-mockup-box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .centup-img {
-    width: 100%;
-    max-width: 1050px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-    object-fit: contain;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .border-bottom-divisore {
-    border-bottom: 2px solid rgba(140, 97, 157, 0.15);
-}
-
-.grid-funzionamento {
-    gap: 1.5rem;
+  border-bottom: 2px solid rgba(76, 42, 109, 0.15);
 }
 
 .funzionamento-testo {
-    font-size: 1.25rem;
-    color: #333333;
-    line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #212529;
 }
 
-.img-spesa {
-    width: 100%;
-    max-width: 240px;
-    height: auto;
-    object-fit: contain;
+.img-spesa, .img-salvadanaio {
+  width: 120px;
+  height: auto;
 }
 
 .img-freccia {
-    width: 100%;
-    max-width: 160px;
-    height: auto;
-    object-fit: contain;
+  width: 100%;
+  max-width: 140px;
+  height: auto;
 }
 
 .calcolo-testo {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #000000;
-}
-
-.img-salvadanaio {
-    width: 120px;
-    height: auto;
-    object-fit: contain;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4c2a6d;
+  margin-top: 5px;
 }
 
 .brand-titolo {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #000000;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #212529;
 }
 
-.img-gestione-obiettivi {
-    width: 100%;
-    max-width: 490px; 
-    height: auto;
-    border-radius: 6px;
-    object-fit: cover;
-}
-
-.img-donazioni {
-    width: 100%;
-    max-width: 490px;
-    height: auto;
-    border-radius: 6px;
-    object-fit: cover;
-}
-
-.img-accedi {
-    width: 100%;
-    max-width: 360px; 
-    height: auto;
-    border-radius: 12px;
-    object-fit: contain;
+.img-slide-preview {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  border-radius: 12px;
 }
 
 .obiettivi-tech-box {
-    background-color: rgba(255, 255, 255, 0.45);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 4px solid #4c2a6d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .tech-box-testo {
-    font-size: 1.15rem;
-    line-height: 1.5;
-    color: #2b2b2b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.tech-grid {
+  margin-top: 20px;
+}
+
+.tech-col {
+  padding-bottom: 20px;
+}
+
+.tech-border-l {
+  border-left: 1px solid rgba(76, 42, 109, 0.15);
+}
+
+@media (max-width: 768px) {
+  .tech-border-l {
+    border-left: none;
+    border-top: 1px solid rgba(76, 42, 109, 0.15);
+    padding-top: 30px;
+    margin-top: 10px;
+  }
 }
 
 .tech-categoria-titolo {
-    font-size: 1.65rem;
-    font-weight: 700;
-    color: #8c619d;
+  font-size: 1.5rem;
+  color: #212529;
+  font-weight: 700;
 }
 
 .tech-lista-titolo {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: rgb(146, 0, 112);
-    line-height: 1.4;
+  color: #4c2a6d;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .tech-descrizione-testo {
-    font-size: 1.15rem;
-    line-height: 1.6;
-    color: #333333;
+  font-size: 0.95rem;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.img-tech-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
 }
 
 .img-tech-logos {
-    width: 100%;
-    max-width: 240px;
-    height: auto;
-    object-fit: contain;
-    margin-top: 10px;
-}
-
-@media (min-width: 768px) {
-    .tech-border-l {
-        border-left: 2px solid rgba(140, 97, 157, 0.15);
-    }
-}
-
-@media (max-width: 992px) {
-    .funzionamento-testo {
-        text-align: center;
-    }
-    .img-freccia {
-        transform: rotate(90deg);
-        margin: 30px 0;
-        max-width: 80px;
-    }
-    .centup-titolo {
-        font-size: 2.2rem;
-    }
-    .img-gestione-obiettivi,
-    .img-donazioni,
-    .img-accedi {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-    .tech-col {
-        text-align: center;
-    }
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  border-radius: 4px;
 }
