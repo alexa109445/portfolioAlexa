@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeftShort, Github } from 'react-bootstrap-icons';
 import '../style/meteo.css';
+import '../style/meteo.css';
+import meteoGif from '../assets/meteo.gif'; 
 
 function Meteo() {
   return (
